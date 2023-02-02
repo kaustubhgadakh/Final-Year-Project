@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(173, 180, 186);
+
+}
+
+.container {
+    background-color: #191919;
+    height: auto;
+    
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 40px 800px 30px;
+
+
+    grid-template-areas:
+        "hd hd"
+        "side main"
+        "ft ft";
+
+}
+
+.box {
+    border: 1px solid red;
+    background-color: white;
+    padding: 10px;
+
+
+}
+
+#header {
+    background-color: #ebd8d8;
+    text-align: center;
+
+
+    grid-area: hd;
+
+}
+
+#sidebar {
+    grid-area: side;
+    height: 100%;
+    width: 100%;
+    background-color: #E7E9EB;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+#content {
+    grid-area: main;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#footer {
+    grid-area: ft;
+}
+
+main {
+    float: left;
+    padding: 10px;
+}
+/* Sidebar */
+
+.points a{
+    text-decoration: none;
+    display: block;
+    padding: 2px 1px 1px 16px;
+    margin: 3px;
+    letter-spacing: 2px;
+}
+.points a:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+.points a.active{
+    background-color: #ffffff!important;
+    color: #000000!important;
+}
+.points h2{
+    padding: 10px;
+}
+
+
+/* Content */
+.content h1 {
+    margin: 0px 10px 20px 10px;
+}
+
+a.btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+.btn-left {
+    float: left;
+}
+
+.btn-right {
+    float: right;
+}
+

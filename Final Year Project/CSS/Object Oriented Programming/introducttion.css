@@ -1,0 +1,11 @@
+.para p{
+    margin: 40px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+.para img{
+    display: block;
+    margin: 20px auto;
+    height: 100%;
+    width: 50%;
+}
